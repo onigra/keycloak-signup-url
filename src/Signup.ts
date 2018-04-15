@@ -6,12 +6,20 @@ export default class Signup {
   readonly url: string;
   readonly clientId: string;
   readonly redirectUrl: string;
+  readonly scope: string;
+  readonly responseMode: ResponseMode;
+  readonly responseType: string;
 
   constructor(config: KeycloakConfig) {
     this.realm = config.realm;
     this.url = config.url;
     this.clientId = config.clientId;
     this.redirectUrl = config.redirectUrl;
+    this.scope = config.scope ? config.scope : "openid";
+    this.responseMode = config.responseMode ? config.responseMode : "fragment";
+    this.responseType = config.responseType
+      ? config.responseType
+      : "id_token token";
   }
 
   signupUrl() {
@@ -25,15 +33,15 @@ export default class Signup {
       "&redirect_uri=" +
       encodeURIComponent(this.redirectUrl) +
       "&scope=" +
-      encodeURIComponent("openid") +
+      encodeURIComponent(this.scope) +
       "&state=" +
       encodeURIComponent(random()) +
       "&nonce=" +
       encodeURIComponent(random()) +
       "&response_mode=" +
-      encodeURIComponent("fragment") +
+      encodeURIComponent(this.responseMode) +
       "&response_type=" +
-      encodeURIComponent("id_token token")
+      encodeURIComponent(this.responseType)
     );
   }
 }
