@@ -1,4 +1,5 @@
 import KeycloakConfig from "./KeycloakConfig";
+import random from "./random";
 
 export default class Signup {
   readonly realm: string;
@@ -26,9 +27,9 @@ export default class Signup {
       "&scope=" +
       encodeURIComponent("openid") +
       "&state=" +
-      encodeURIComponent("12345") +
+      encodeURIComponent(random()) +
       "&nonce=" +
-      encodeURIComponent("12345") +
+      encodeURIComponent(random()) +
       "&response_mode=" +
       encodeURIComponent("fragment") +
       "&response_type=" +
