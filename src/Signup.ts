@@ -1,9 +1,4 @@
-interface KeycloakConfig {
-  realm: string;
-  url: string;
-  clientId: string;
-  redirectUrl: string;
-}
+import KeycloakConfig from "./KeycloakConfig";
 
 export default class Signup {
   readonly realm: string;
