@@ -1,4 +1,4 @@
-type ResponseMode = "query" | "fragment";
+import { ResponseMode } from "./ResponseMode";
 
 export default interface KeycloakConfig {
   realm: string;

@@ -1,4 +1,5 @@
 import KeycloakConfig from "./KeycloakConfig";
+import { ResponseMode } from "./ResponseMode";
 import random from "./random";
 
 export default class Signup {
