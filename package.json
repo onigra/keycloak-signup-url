@@ -1,0 +1,8 @@
+{
+  "name": "keycloak-js-signup",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/onigra/keycloak-js-signup",
+  "author": "onigra",
+  "license": "MIT"
+}
