@@ -1,12 +1,12 @@
 {
   "name": "keycloak-js-signup",
   "version": "0.0.1",
-  "main": "./dist/index.js",
+  "main": "./dist/index.min.js",
   "repository": "https://github.com/onigra/keycloak-js-signup",
   "author": "onigra",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack --mode production",
     "test": "jest"
   },
   "jest": {
@@ -19,7 +19,10 @@
   "devDependencies": {
     "@types/jest": "^22.2.3",
     "jest": "^22.4.3",
-    "ts-jest": "^22.4.3"
+    "ts-jest": "^22.4.3",
+    "ts-loader": "^4.2.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
   },
   "dependencies": {
     "typescript": "^2.8.1"
