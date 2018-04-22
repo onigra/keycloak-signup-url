@@ -14,12 +14,7 @@
       "^.+\\.ts?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json",
-      "node"
-    ]
+    "moduleFileExtensions": ["ts", "js", "json", "node"]
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
