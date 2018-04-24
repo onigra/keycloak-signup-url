@@ -1,8 +1,9 @@
 import Signup from "../src/Signup";
+import KeycloakConfig from "../src/KeycloakConfig";
 
 describe("Signup", () => {
   test("Default config", () => {
-    const config = {
+    const config: KeycloakConfig = {
       realm: "my-realm",
       url: "https://localhost:8080/auth",
       clientId: "my-realm-client",
@@ -26,7 +27,7 @@ describe("Signup", () => {
   });
 
   test("Scope is openid & email", () => {
-    const config = {
+    const config: KeycloakConfig = {
       realm: "my-realm",
       url: "https://localhost:8080/auth",
       clientId: "my-realm-client",
@@ -51,7 +52,7 @@ describe("Signup", () => {
   });
 
   test("ResponseMode is code", () => {
-    const config = {
+    const config: KeycloakConfig = {
       realm: "my-realm",
       url: "https://localhost:8080/auth",
       clientId: "my-realm-client",
@@ -76,7 +77,7 @@ describe("Signup", () => {
   });
 
   test("ResponseType is query", () => {
-    const config = {
+    const config: KeycloakConfig = {
       realm: "my-realm",
       url: "https://localhost:8080/auth",
       clientId: "my-realm-client",
