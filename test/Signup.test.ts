@@ -30,7 +30,7 @@ describe("Signup", () => {
       realm: "my-realm",
       url: "https://localhost:8080/auth",
       clientId: "my-realm-client",
-      redirectUrl: "https://localhost:3000/callback/signup"
+      redirectUrl: "https://localhost:3000/callback/signup",
       scope: "openid email"
     };
 
@@ -55,7 +55,7 @@ describe("Signup", () => {
       realm: "my-realm",
       url: "https://localhost:8080/auth",
       clientId: "my-realm-client",
-      redirectUrl: "https://localhost:3000/callback/signup"
+      redirectUrl: "https://localhost:3000/callback/signup",
       responseType: "code"
     };
 
@@ -80,7 +80,7 @@ describe("Signup", () => {
       realm: "my-realm",
       url: "https://localhost:8080/auth",
       clientId: "my-realm-client",
-      redirectUrl: "https://localhost:3000/callback/signup"
+      redirectUrl: "https://localhost:3000/callback/signup",
       responseMode: "query"
     };
 
