@@ -6,7 +6,7 @@
   "author": "onigra",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack --mode production",
     "test": "jest",
     "test-with-coverage":
       "jest --coverage && cat ./coverage/lcov.info | codacy-coverage"
