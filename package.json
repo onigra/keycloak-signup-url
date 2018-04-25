@@ -1,12 +1,12 @@
 {
   "name": "keycloak-signup-url",
   "version": "0.0.1",
-  "main": "./dist/Signup.js",
+  "main": "./dist/index.min.js",
   "repository": "https://github.com/onigra/keycloak-signup-url",
   "author": "onigra",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack --mode production",
     "test": "jest",
     "test-with-coverage":
       "jest --coverage && cat ./coverage/lcov.info | codacy-coverage"

@@ -15,7 +15,8 @@ module.exports = {
     extensions: [".ts", ".js"]
   },
   output: {
-    filename: "index.min.js",
-    path: path.resolve(__dirname, "dist")
+    filename: "dist/index.min.js",
+    path: path.resolve(__dirname, "./"),
+    libraryTarget: "commonjs2"
   }
 };
