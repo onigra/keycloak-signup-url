@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
-    "codacy-coverage": "^2.1.1",
+    "codacy-coverage": "^3.4.0",
     "jest": "^22.4.3",
     "ts-jest": "^22.4.3",
     "ts-loader": "^4.2.0",
