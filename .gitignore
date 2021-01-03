@@ -1,3 +1,5 @@
 node_modules
 *.log
 coverage
+.tool-versions
+test/keycloak/tmp
