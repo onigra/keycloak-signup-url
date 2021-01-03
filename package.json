@@ -7,20 +7,23 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
-    "test": "jest",
-    "test-with-coverage":
-      "jest --coverage && cat ./coverage/lcov.info | codacy-coverage"
+    "test": "jest"
   },
   "jest": {
+    "testURL": "http://localhost/",
     "transform": {
       "^.+\\.ts?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": ["ts", "js", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ]
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
-    "codacy-coverage": "^3.4.0",
     "jest": "^22.4.3",
     "ts-jest": "^23.10.5",
     "ts-loader": "^4.2.0",
