@@ -8,4 +8,4 @@ export default interface KeycloakConfig {
   scope?: string;
   responseMode?: ResponseMode;
   responseType?: string;
-};
+}
