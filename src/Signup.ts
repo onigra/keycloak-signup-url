@@ -1,6 +1,6 @@
 import KeycloakConfig from "./KeycloakConfig";
 import { ResponseMode } from "./ResponseMode";
-import createUUID from "./uuid";
+import { v4 as uuidv4 } from 'uuid';
 
 export default class Signup {
   readonly realm: string;
@@ -36,9 +36,9 @@ export default class Signup {
       "&scope=" +
       encodeURIComponent(this.scope) +
       "&state=" +
-      encodeURIComponent(createUUID()) +
+      encodeURIComponent(uuidv4()) +
       "&nonce=" +
-      encodeURIComponent(createUUID()) +
+      encodeURIComponent(uuidv4()) +
       "&response_mode=" +
       encodeURIComponent(this.responseMode) +
       "&response_type=" +
