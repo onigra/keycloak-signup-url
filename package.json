@@ -1,6 +1,6 @@
 {
   "name": "keycloak-signup-url",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./dist/index.min.js",
   "repository": "https://github.com/onigra/keycloak-signup-url",
   "author": "onigra",
