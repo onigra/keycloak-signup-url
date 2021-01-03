@@ -12,6 +12,7 @@
       "jest --coverage && cat ./coverage/lcov.info | codacy-coverage"
   },
   "jest": {
+    "testURL": "http://localhost/",
     "transform": {
       "^.+\\.ts?$": "ts-jest"
     },
