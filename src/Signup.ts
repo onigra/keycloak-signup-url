@@ -1,6 +1,6 @@
 import KeycloakConfig from "./KeycloakConfig";
 import { ResponseMode } from "./ResponseMode";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 export default class Signup {
   readonly realm: string;
