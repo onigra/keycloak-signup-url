@@ -1,0 +1,25 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        node:
+          - 14
+          - 15
+
+    name: UnitTest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+        id: node
+
+      - run: yarn install
+      - run: yarn test
