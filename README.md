@@ -1,9 +1,9 @@
 # keycloak-signup-url
 
 [![npm version](https://badge.fury.io/js/keycloak-signup-url.svg)](https://badge.fury.io/js/keycloak-signup-url)
-[![Build Status](https://travis-ci.org/onigra/keycloak-signup-url.svg?branch=master)](https://travis-ci.org/onigra/keycloak-signup-url)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aa6aa81a971f4a779af3110cefcb5adc)](https://www.codacy.com/app/onigra/keycloak-signup-url?utm_source=github.com&utm_medium=referral&utm_content=onigra/keycloak-signup-url&utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/aa6aa81a971f4a779af3110cefcb5adc)](https://www.codacy.com/app/onigra/keycloak-signup-url?utm_source=github.com&utm_medium=referral&utm_content=onigra/keycloak-signup-url&utm_campaign=Badge_Coverage)
+![Test](https://github.com/onigra/keycloak-signup-url/workflows/Test/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4477ce02246b4ede82d5bb2866e93401)](https://www.codacy.com/gh/onigra/keycloak-signup-url/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=onigra/keycloak-signup-url&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/4477ce02246b4ede82d5bb2866e93401)](https://www.codacy.com/gh/onigra/keycloak-signup-url/dashboard?utm_source=github.com&utm_medium=referral&utm_content=onigra/keycloak-signup-url&utm_campaign=Badge_Coverage)
 
 Create signup url for [Keycloak](https://www.keycloak.org/).
 
