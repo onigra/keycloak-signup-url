@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="//localhost:8080/auth/js/keycloak.js"></script>
+    <script>
+      const keycloak = new Keycloak();
+
+      keycloak.init().then((authenticated) => {
+        let registerUrl = keycloak.createRegisterUrl();
+        auth.innerHTML += authenticated;
+        signup.href = registerUrl; 
+        login.href = keycloak.createLoginUrl();
+        signupUrl.innerHTML= registerUrl;
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li><div id="auth">Authenticated: </div></li>
+      <li><a id="signup" target="_blank" rel="noopener">Signup</a></li>
+      <li><a id="login" target="_blank" rel="noopener">Login</a></li>
+      <li><a href="http://localhost:8080/auth/admin/" target="_blank" rel="noopener">Keycloak Admin</a></li>
+      <p><code id="signupUrl"></code></p>
+    </ul>
+  </body>
+</html>

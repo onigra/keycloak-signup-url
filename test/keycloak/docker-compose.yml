@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: keycloak
+      MYSQL_USER: keycloak
+      MYSQL_PASSWORD: keycloak
+    ports:
+      - 3306:3306
+    volumes:
+      - ./tmp/mysql:/var/lib/mysql
+
+  keycloak:
+    image: jboss/keycloak:latest
+    ports:
+      - 8080:8080
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: password
+      KEYCLOAK_IMPORT: /tmp/realm.json
+      DB_VENDOR: MYSQL
+      DB_ADDR: mysql
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_PASSWORD: keycloak
+    volumes:
+      - ./config/realm.json:/tmp/realm.json
+    depends_on:
+      - mysql
+
+  caddy:
+    image: caddy:latest
+    ports:
+      - 80:80
+      - 443:443
+    command: caddy file-server --root /etc/caddy
+    volumes:
+      - ./caddy:/etc/caddy
